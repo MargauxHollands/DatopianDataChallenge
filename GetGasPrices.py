@@ -25,7 +25,7 @@ DailyPrices_Data['Date'] = pd.to_datetime(DailyPrices_Data['Date'])
 DailyPrices_Data = DailyPrices_Data.reset_index(drop=True)
 
 # Save to CSV
-DailyPrices_Data.to_csv('DailyPrices.csv')
+DailyPrices_Data.to_csv('Data/DailyPrices.csv')
 
 
 # Monthly Prices CSV
@@ -45,5 +45,5 @@ MonthlyPrices_Data = MonthlyPrices_Data.reset_index(drop=True)
 MonthlyPrices_Data['Date'] = (pd.to_datetime(MonthlyPrices_Data['Date']) + timedelta(-14))
 
 # Save to CSV
-MonthlyPrices_Data.to_csv('MonthlyPrices.csv')
+MonthlyPrices_Data.to_csv('Data/MonthlyPrices.csv')
 
